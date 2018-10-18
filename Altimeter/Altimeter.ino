@@ -41,7 +41,7 @@ float base;
 void setup()
 {
   Wire.begin();        // Join i2c bus
-  Serial.begin(9600);  // Start serial for output
+  Serial1.begin(9600);  // Start serial for output
 
   myPressure.begin(); // Get sensor online
 
@@ -61,7 +61,7 @@ void loop()
 {
   float altitude = myPressure.readAltitude()-base;
   //Serial.print("Altitude(m):");
-  Serial.print(altitude, 2);
+  Serial1.print(altitude, 2);
 
   //float altitude = myPressure.readAltitudeFt();
   //Serial.print(" Altitude(ft):");
