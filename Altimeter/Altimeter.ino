@@ -79,5 +79,5 @@ void loop()
  // Serial.print(" Temp(f):");
  // Serial.print(temperature, 2);
   delay(10);
-  Serial.println();
+  Serial1.println();
 }
